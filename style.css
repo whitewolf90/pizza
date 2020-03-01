@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+/* My website fonts */
+@font-face {
+    font-family: myHeadersFont;
+    src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: myMainNav;
+    src: url(./fonts/Lobster-Regular.ttf);
+}
+
+/* My main CSS */
+
+html {
+    font-size: 17px;
+}
+
+body {
+    background-color: #2f2f2f;
+    /* transition: background-image 2s ease-in-out; */
+}
+
+.container {
+    margin: auto;
+    width: 990px;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #f5a65d;
+    font-family: myMainNav, serif;
+    background-image: url("./img/black-linen.png");
+    background-size: auto;
+    border-bottom: 2px solid #f5a65d;
+}
+
+nav .current a {
+    color: #edddc2;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b2b2a;
+    font-size: 25px;
+    transition: color 0.6s;
+}
+
+.logo {
+    height: 70px;
+    position: absolute;
+    left: 220px;
+}
+
+a:hover {
+    color: #edddc2;
+}
+
+.main-navigation {
+    float: right;
+}
+
+div.container li {
+    list-style: none;
+    display: inline;
+    margin: 0px 25px;
+    line-height: 80px;
+}
+
+/* End Nav */
+
+.show1 {
+    min-height: 700px;
+    background: url("img/messy-pizza.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.secondary-title {
+    font-family: myHeadersFont, serif;
+    /*"Bebas Neue";*/
+    color: #edddc2;
+    font-size: 3.95rem;
+    margin: 90px;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    user-select: none;
+}
+
+.leading-title {
+    font-size: 2.8rem;
+    font-family: myMainNav, serif;
+    color: #f9c464;
+    margin-top: 120px;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    user-select: none;
+
+}
+
+.description {
+    font-family: "Libre Caslon Text", serif;
+    color: #f9c464;
+    font-size: 1.1875em;
+    font-weight: bold;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1.7em;
+    max-width: 500px;
+    user-select: none;
+}
+
+.social-menu ul {
+    padding: 0;
+    margin: 15px;
+    display: flex;
+    list-style-type: none;
+}
+
+social-menu ul li {
+    margin: 0 15px;
+}
+
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f5a65d;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0, 0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #0077b5;
+}
+
+footer {
+    background: url("./img/black-linen.png"), #f5a65d;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    width: 990px;
+    margin: auto;
+}
+
+.social-menu,
+.footer-links,
+.footer-questions {
+    margin-top: 45px;
+    flex: 1;
+    font-size: 16px;
+    /* font-weight: bold; */
+    font-family: "Libre Caslon Text", serif;
+    color: #2b2b2a;
+    align-items: center;
+    line-height: 2.0em;
+}
+
+.footer-links {
+    flex: 2;
+    text-align: center;
+}
+
+.contact-form input,
+textarea {
+    width: 220px;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #f5a65d;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 8px 8px 8px 0;
+    outline: none;
+    transition: 0.4s;
+}
+
+.contact-form input:focus,
+textarea:focus {
+    border-color: #f7d0a8;
+    box-shadow: 0 0 8px 0 #f7d0a8;
+}
+
+.contact-form button {
+    border: 2px solid #f5a65d;
+    border-radius: 5px;
+    background: #f5a65d;
+    overflow: hidden;
+    color: #2b2b2a;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 150px;
+    font-family: "Libre Caslon Text", serif;
+    transition: .6s;
+}
+
+/* .contact-form button:focus {
+    outline: none; */
+
+.contact-form button:hover {
+    background: #ffb76b;
+    background: -moz-linear-gradient(top, #ffb76b 10%, #ff7c00 83%, #ff7f04 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffb76b 10%, #ff7c00 83%, #ff7f04 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffb76b 10%, #ff7c00 83%, #ff7f04 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb76b', endColorstr='#ff7f04', GradientType=0);
+    /* IE6-9 */
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #2b2b2a;
+    font-family: "Libre Caslon Text", serif;
+    font-style: italic;
+}
+
+.copyright {
+    font-size: 15px;
+    margin-top: 40px;
+    text-align: center;
+    padding: 40px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: bold;
+    color: #2b2b2a;
+}
+
+.bg-2 {
+    background: url("img/pw.jpg") no-repeat;
+    filter: brightness(85%);
+    min-height: 700px;
+    background-size: cover;
+
+}
+
+.bg-2 h1 {
+    font-family: myHeadersFont, serif;
+    color: #edddc2;
+    font-size: 3.94rem;
+    float: right;
+    padding-right: 16px;
+    margin-top: 300px;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    user-select: none;
+}
+
+.box-1,
+.box-2 {
+    margin: 35px 0px;
+    color: #edddc2;
+    font-family: "Libre Caslon Text", serif;
+    line-height: 1.7em;
+}
+
+.box-1 img {
+    float: right;
+    margin: 40px;
+    border: 1px solid #edddc2;
+    padding: 0;
+
+}
+
+#phone {
+    vertical-align: middle;
+}
+
+#phone i {
+    vertical-align: middle;
+}
+
+.flex-con {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    width: 990px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.about1 {
+    background: url("img/people.png") no-repeat 50%;
+    background-size: cover;
+}
+
+.overlay {
+    background-color: #000;
+    opacity: 0.4;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.row {
+    margin: 20px 0;
+    flex: 25%;
+}
+
+.row h3 {
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.row img {
+    margin-bottom: 20px;
+}
+
+.row p {
+    padding-right: 10px;
+}
+
+.btn-menus {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.btn-menus a {
+    padding: 15px 20px;
+    margin-right: 25px;
+    background-color: #2f2f2f;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e19e07;
+    border: 1px solid #e19e07;
+    border-radius: 5px;
+    transition: .8s ease;
+}
+
+.btn-menus a:hover {
+    cursor: pointer;
+    color: #f8f8ff;
+    background-color: #e19e07;
+}
+
+
+.row img:hover {
+    opacity: 0.3;
+    transition: .6s ease;
+    cursor: pointer;
+}
+
+.row .middle {
+    opacity: 1;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  } */
+
+.row {
+    position: relative;
+}
+
+
+.current-b.current-b {
+    color: #f8f8ff;
+    background-color: #e19e07;
+}
+
+.hidden {
+    display:none !important;
+}

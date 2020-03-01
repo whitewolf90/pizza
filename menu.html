@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,400i,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <title>Pizza Delicious</title>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <ul class="main-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+            <img class="logo" src="img/pizza-del.png">
+        </div>
+    </nav>
+    <section class="bg-2">
+        <div class="container">
+            <h1>Our Menu</h1>
+        </div>
+    </section>
+    <div class="box-2">
+        <div class="container">
+            <div class="btn-menus">
+               <a id="pizzaBtn" onclick="resetState('pizzas');">Pizzas</a>
+               <a id="saladBtn" onclick="resetState('salads');">Salads</a>
+               <a id="dessertBtn" onclick="resetState('desserts');">Desserts</a>
+               <a id="drinkBtn"  onclick="resetState('drinks');">Drinks</a>
+            </div>
+        </div>
+        <div class="flex-con hidden" id="drinks">
+            <h1>My Drinks</h1>
+        </div>
+        <div class="flex-con hidden" id="desserts">
+            <h1>My Deserts</h1>
+        </div>
+        <div class="flex-con hidden" id="salads">
+            <h1>My Salads</h1>
+        </div>
+        <div class="flex-con" id="pizzas">
+            <div class="row">                 
+                <img src="img/piza.jpg">                
+                <h3>Italian Pizza</h3>
+                <p>Prosciutto di Parma, ricotta cheese, pepperoni, red onions,
+                    Wisconsin mozzarella, and Delicious's pizza sauce, drizzles
+                    with
+                    pesto sauce.</p>
+            </div>
+            <div class="row">
+                <img src="img/Italian-Market-1.jpg">
+                <h3>Greek Pizza</h3>
+                <p>Truffle olive oil sauce, Wisconsin mozzarella, Prosciutto di
+                    Parma, fresh arugula, and fresh mozzarella.</p>
+            </div>
+            <div class="row">
+                <img src="img/Heart-Healthy-Veggie-1.jpg">
+                <h3>Healthy Veggie</h3>
+                <p>Fresh spinach, artichokes, white onions, mushrooms, Roma
+                    tomatoes,
+                    basil, and Wisconsin mozzarella, with Sicilian extra-virgin
+                    olive
+                    oil, and garlic sauce</p>
+            </div>
+            <div class="row">
+                <img src="img/Mediterranean-Pizza.jpg">
+                <h3>Mediterranean Pizza</h3>
+                <p>Fresh spinach, Roma tomatoes, feta cheese, Wisconsin
+                    mozzarella,
+                    black olives, and Sicilian extra-virgin olive oil garlic
+                    sauce.
+                </p>
+            </div>
+            <div class="row">
+                <img src="img/Margherita.jpg">
+                <h3>Margherita</h3>
+                <p>Roma tomatoes, fresh basil, garlic, Wisconsin mozzarella, and
+                    Sicilian extra-virgin olive oil.</p>
+            </div>
+            <div class="row">
+                <img src="img/Vegetarian.jpg">
+                <h3>Vegetarian</h3>
+                <p>Fresh spinach, bell peppers, black olives, white onions, Roma
+                    tomatoes, mushrooms, garlic, and Wisconsin mozzarella with
+                    Russo's pizza sauce.</p>
+            </div>
+            <div class="row">
+                <img src="img/Chicken-Rustica.jpg">
+                <h3>Chicken Rustica</h3>
+                <p>Grilled chicken with fresh spinach, basil, feta cheese, Roma
+                    tomatoes, Wisconsin mozzarella, Sicilian extra-virgin olive
+                    oil,
+                    and fresh garlic.</p>
+            </div>
+            <div class="row">
+                <img src="img/Tuscan.jpg">
+                <h3>Tuscan Vegan Veggie Pizza</h3>
+                <p>No Cheese. Marinara sauce, zucchini & squash, Portabella
+                    mushrooms, black olives, eggplant, roasted peppers, artichoke
+                    hearts, red onions, and fresh arugula.</p>
+            </div>
+            <div class="row">
+                <img src="img/New-York-Village.jpg">
+                <h3>New York Village</h3>
+                <p>Crumbled Italian sausage, pepperoni, Canadian bacon, beef, mushrooms, black olives, roasted peppers, and Wisconsin mozzarella, with Russo’s pizza sauce.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-menu">
+                <h4>ABOUT US</h4>
+                <p>One Fifth Avenue at 8th Street
+                    New York City, NY 10003</p>
+                    <p> <i style=="font-size:24px" class="fa">&#xf0e0;</i> info@pizzadelicious.com</p>
+                <p id="phone"><i style="font-size:24px" class="fa">&#xf095;</i>
+                    +2 212 995 9559</p>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class=footer-links>
+                <h4>OPENING HOURS</h4>
+                <p>9:00 AM - 11:00 PM</p>
+                <p>Monday to Saturday</p>
+                <p>Sunday - Holiday</p>
+            </div>
+
+            <div class="footer-questions">
+                <h4>HAVE A QUESTIONS?</h4>
+                <form class="contact-form" action="index.html">
+                    <input type="text" name="name" placeholder="Your name...">
+                    <input type="email" name="email" placeholder="Your email...">
+                    <textarea name="message"
+                        placeholder="Your message..."></textarea>
+                    <button type="submit" name="Send">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Cvety's Delicious Pizza Web Design, Copyright &copy; 2020</p>
+        </div>
+    </footer>
+</body>
+
+</html>
