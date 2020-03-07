@@ -2,10 +2,15 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="/img/fav-icon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="icon" href="img/fav-icon.ico">
+
     <link
         href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,400i,700&display=swap&subset=latin-ext"
         rel="stylesheet">
@@ -15,6 +20,7 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
     <title>Pizza Delicious</title>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -62,40 +68,45 @@
             </p>
         </div>
     </div>
-    
+
     <section class="about1">
-        <div class="overlay"></div>              
+        <div class="overlay"></div>
     </section>
     <div class="box-1">
-
-    <div class="container">
-        <h1>Family Style Catering</h1>
-        <p> Our restourant's services Family Style catering always delivers. Any
-            time. Any where. Any size. From our authentic New York-style Pizza to
-            our
-            made-from-scratch entrées, your order can be ready for pick-up on
-            your
-            special day, or delivered at no cost! Let us do all the work so you
-            can
-            enjoy the party.
-        </p>
-        <h1>Service</h1>
-        <p>Trays serve 6 – 8 people</p>        
+        <div class="container">
+            <h1>Family Style Catering</h1>
+            <p> Our restourant's services Family Style catering always delivers. Any
+                time. Any where. Any size. From our authentic New York-style Pizza to
+                our
+                made-from-scratch entrées, your order can be ready for pick-up on
+                your
+                special day, or delivered at no cost! Let us do all the work so you
+                can
+                enjoy the party.
+            </p>
+            <h1>Service</h1>
+            <p>Trays serve 6 – 8 people</p>
             <p> Serving groups of 4 or more</p>
             <p>Same day notice okay</p>
-            <p>We deliver starting at 10:30am</p>
+            <p class="last-p">We deliver starting at 10:30am</p>
+        </div>
     </div>
-</div>
 
     <footer>
         <div class="footer-content">
             <div class="social-menu">
-                <h4>ABOUT US</h4>
-                <p>One Fifth Avenue at 8th Street
-                    New York City, NY 10003</p>
-                <p> <i style=="font-size:24px" class="fa">&#xf0e0;</i>
-                    info@pizzadelicious.com</p>
-                <p id="phone"><i style="font-size:24px" class="fa">&#xf095;</i>
+                <h4>CONTACT US</h4>
+                <p> <i class="fa fa-map-marker fa-fw"
+                        style="font-size:24px; margin-left: -15px; margin-right: 10px;"></i>One
+                    Sixth
+                    Avenue at 8th Street</p>
+                <p style="margin-left: 26px;"> New York City, NY 10003</p>
+                <p><i class="fa fa-envelope fa-fw"
+                        style="font-size:24px; margin-left: -15px; margin-right: 10px;"></i>
+                    info@pizzadelicious.com
+                </p>
+                <p><i class="fa fa-phone fa-fw"
+                        style="font-size:24px; margin-left: -15px; margin-right: 10px;"></i>
                     +2 212 995 9559</p>
                 <ul>
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -106,27 +117,29 @@
             </div>
             <div class=footer-links>
                 <h4>OPENING HOURS</h4>
-                <p>9:00 AM - 11:00 PM</p>
-                <p>Monday to Saturday</p>
-                <p>Sunday - Holiday</p>
+                <p>Monday - Friday - 9:00 – 22:00</p>
+                <p>Saturday - 9:00 – 00:00</p>
+                <p>Sunday - 9:00 – 18:00</p>
             </div>
 
             <div class="footer-questions">
-                <h4>HAVE A QUESTIONS?</h4>
-                <form class="contact-form" action="index.html">
-                    <input type="text" name="name" placeholder="Your name...">
-                    <input type="email" name="email" placeholder="Your email...">
-                    <textarea name="message"
-                        placeholder="Your message..."></textarea>
-                    <button type="submit" name="Send">Send</button>
-                </form>
+                <h4>SERVICES</h4>
+                <ul>
+                    <li><a href="about.html">Quality Foods</a></li>
+                    <li><a href="index.html">Original Recipes</a></li>
+                    <li><a href="menu.html">Dine In or Take Out</a></li>
+                    <li><a href="about.html">Catering and Parties</a></li>
+                </ul>
             </div>
         </div>
-
         <div class="copyright">
             <p>Cvety's Delicious Pizza Web Design, Copyright &copy; 2020</p>
         </div>
     </footer>
+    <a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="icon" href="img/fav-icon.ico">
     <link
         href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,400i,700&display=swap&subset=latin-ext"
         rel="stylesheet">
@@ -15,7 +18,7 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
     <title>Pizza Delicious</title>
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -35,101 +38,234 @@
             <h1>Our Menu</h1>
         </div>
     </section>
-    <div class="box-2">
-        <div class="container">
-            <div class="btn-menus">
-               <a id="pizzaBtn" onclick="resetState('pizzas');">Pizzas</a>
-               <a id="saladBtn" onclick="resetState('salads');">Salads</a>
-               <a id="dessertBtn" onclick="resetState('desserts');">Desserts</a>
-               <a id="drinkBtn"  onclick="resetState('drinks');">Drinks</a>
+
+    <section class="bg-3">
+        <section class="section-1">
+            <div class="container">
+                <h3><span id="span-1">We make</span><br>
+                    delicious pizza</h3>
+                <p>And not only that but also we are happy to introduce<br> our new
+                    and
+                    expanded menu where you can find<br> fresh salads, all favourite
+                    desserts
+                    and drinks you can't resist!</p>
+            </div>
+        </section>
+        <div class="box-2">
+            <div class="container">
+                <div class="btn-menus">
+                    <a id="pizzaBtn" onclick="resetState('pizzas');">Pizzas</a>
+                    <a id="saladBtn" onclick="resetState('salads');">Salads</a>
+                    <a id="dessertBtn" onclick="resetState('desserts');">Desserts</a>
+                    <a id="drinkBtn" onclick="resetState('drinks');">Drinks</a>
+                </div>
+            </div>
+            <div class="flex-con hidden" id="drinks">
+                <div class="row">
+
+                    <img src="img/drink-3.jpg">
+                    <h3>Rose</h3>
+                    <p>Indulge in the light pink wine made from purple grapes,
+                        carefully fermented to achieve the lovely desired color.</p>
+                </div>
+                <div class="row">
+                    <img src="img/drink-1.jpg">
+                    <h3>Dark Beer</h3>
+                    <p>Dark, top-fermented beer with a number of variations, perfect
+                        choice for the winter.</p>
+                </div>
+                <div class="row">
+                    <img src="img/drink-2.png">
+                    <h3>Ginger Beer</h3>
+                    <p>Traditional ginger beer, sweetened and carbonated, produced by
+                        natural fermentation of prepared ginger spice, yeast and
+                        sugar.
+                    </p>
+                </div>
+                <div class="row">
+                    <img src="img/drink-5.png">
+                    <h3>Light Beer</h3>
+                    <p> Enjoy a cool and refreshing beer without piling on the pounds
+                        with our roundup of the best light beers that still taste
+                        good.
+                    </p>
+                </div>
+                <div class="row">
+                    <img src="img/drink-6.png">
+                    <h3>Mohito</h3>
+                    <p>Well known and well loved cocktail made of rum, sugar, lime
+                        juice,
+                        crushed mint leaves, soda water, and shaved ice.</p>
+                </div>
+                <div class="row">
+                    <img src="img/drink-4.jpg">
+                    <h3>Orange Juice</h3>
+                    <p>100% oranges, never concentrated, zero sugar, specially made
+                        for
+                        healthy life and fresh start of the day.</p>
+                </div>
+
+            </div>
+            <div class="flex-con hidden" id="desserts">
+                <div class="row">
+                    <img src="img/Red-Velvet.jpg">
+                    <h3>Red Velvet</h3>
+                    <p>Red velvet cake layered with chocolate ganache filling, and
+                        frosted with a tangy cream cheese icing.</p>
+                </div>
+                <div class="row">
+                    <img src="img/Cake.jpg">
+                    <h3>Italian Cream Cake</h3>
+                    <p>Sweet cream cake with coconut, pecans, and cream cheese
+                        frosting.
+                    </p>
+                </div>
+                <div class="row">
+                    <img src="img/Tiramisu.jpg">
+                    <h3>Tiramisu</h3>
+                    <p>House-made with ladyfingers soaked in espresso and Kahlua,
+                        layered
+                        with fresh mascarpone cheese.</p>
+                </div>
+
+            </div>
+            <div class="flex-con hidden" id="salads">
+                <div class="row">
+                    <img src="img/Insalata-Caprese-2.jpg">
+                    <h3>Insalata Caprese</h3>
+                    <p>Perfectly ripened Roma tomatoes, fresh mozzarella, and
+                        garden-fresh basil, drizzled with balsamic glaze and Sicilian
+                        extra-virgin olive oil.</p>
+                </div>
+                <div class="row">
+                    <img src="img/Caesar.jpg">
+                    <h3>Caesar</h3>
+                    <p>Prosciutto di Parma, ricotta cheese, pepperoni, red onions,
+                        Wisconsin mozzarella, and Delicious's pizza sauce, drizzles
+                        with
+                        pesto sauce.</p>
+                </div>
+                <div class="row">
+                    <img src="img/Cucumber-Feta.jpg">
+                    <h3>Cucumber & Feta</h3>
+                    <p>Sliced cucumber with feta cheese, Roma tomatoes, onions,
+                        Kalamata
+                        olives, and fresh garlic, tossed with Sicilian extra-virgin
+                        olive
+                        oil.</p>
+                </div>
+                <div class="row">
+                    <img src="img/Mediterranean-1.jpg">
+                    <h3>Mediterranean</h3>
+                    <p>Romaine lettuce, garden vegetables, pine nuts, sun-dried
+                        tomatoes,
+                        artichoke hearts, Dolce Gorgonzola cheese, and pepperoncini,
+                        lightly tossed with balsamic vinaigrette dressing.</p>
+                </div>
+                <div class="row">
+                    <img src="img/Greek-2.jpg">
+                    <h3>Greek Salad</h3>
+                    <p>Fresh Romaine lettuce sprinkled with feta cheese, garden
+                        vegetables, Kalamata olives, and Russo’s balsamic vinaigrette
+                        dressing.</p>
+                </div>
+                <div class="row">
+                    <img src="img/House.jpg">
+                    <h3>House Salad</h3>
+                    <p>Fresh Romaine lettuce, red onions, bell peppers, Roma
+                        tomatoes, cucumbers, red cabbage, black olives, and your
+                        choice of dressing./p>
+                </div>
+            </div>
+            <div class="flex-con" id="pizzas">
+                <div class="row">
+                    <img src="img/Vegetarian.jpg">
+                    <h3>Vegetarian</h3>
+                    <p>Fresh spinach, bell peppers, black olives, white onions, Roma
+                        tomatoes, mushrooms, garlic, and Wisconsin mozzarella with
+                        Russo's pizza sauce.</p>
+
+                </div>
+                <div class="row">
+                    <img src="img/Italian-Market-1.jpg">
+                    <h3>Greek Pizza</h3>
+                    <p>Truffle olive oil sauce, Wisconsin mozzarella, Prosciutto di
+                        Parma, fresh arugula, and fresh mozzarella.</p>
+                </div>
+                <div class="row">
+                    <img src="img/Heart-Healthy-Veggie-1.jpg">
+                    <h3>Healthy Veggie</h3>
+                    <p>Fresh spinach, artichokes, white onions, mushrooms, Roma
+                        tomatoes,
+                        basil, and Wisconsin mozzarella, with Sicilian extra-virgin
+                        olive
+                        oil, and garlic sauce</p>
+                </div>
+                <div class="row">
+                    <img src="img/Mediterranean-Pizza.jpg">
+                    <h3>Mediterranean Pizza</h3>
+                    <p>Fresh spinach, Roma tomatoes, feta cheese, Wisconsin
+                        mozzarella,
+                        black olives, and Sicilian extra-virgin olive oil garlic
+                        sauce.
+                    </p>
+                </div>
+                <div class="row">
+                    <img src="img/Margherita.jpg">
+                    <h3>Margherita</h3>
+                    <p>Roma tomatoes, fresh basil, garlic, Wisconsin mozzarella, and
+                        Sicilian extra-virgin olive oil.</p>
+                </div>
+                <div class="row">
+                    <img src="img/piza.jpg">
+
+                    <h3>Italian Pizza</h3>
+                    <p>Prosciutto di Parma, ricotta cheese, pepperoni, red onions,
+                        Wisconsin mozzarella, and Delicious's pizza sauce, drizzles
+                        with
+                        pesto sauce.</p>
+                </div>
+                <div class="row">
+                    <img src="img/Chicken-Rustica.jpg">
+                    <h3>Chicken Rustica</h3>
+                    <p>Grilled chicken with fresh spinach, basil, feta cheese, Roma
+                        tomatoes, Wisconsin mozzarella, Sicilian extra-virgin olive
+                        oil,
+                        and fresh garlic.</p>
+                </div>
+                <div class="row">
+                    <img src="img/Tuscan.jpg">
+                    <h3>Tuscan Vegan Veggie Pizza</h3>
+                    <p>No Cheese. Marinara sauce, zucchini & squash, Portabella
+                        mushrooms, black olives, eggplant, roasted peppers, artichoke
+                        hearts, red onions, and fresh arugula.</p>
+                </div>
+                <div class="row">
+                    <img src="img/New-York-Village.jpg">
+                    <h3>New York Village</h3>
+                    <p>Crumbled Italian sausage, pepperoni, Canadian bacon, beef,
+                        mushrooms, black olives, roasted peppers, and Wisconsin
+                        mozzarella, with Russo’s pizza sauce.</p>
+                </div>
             </div>
         </div>
-        <div class="flex-con hidden" id="drinks">
-            <h1>My Drinks</h1>
-        </div>
-        <div class="flex-con hidden" id="desserts">
-            <h1>My Deserts</h1>
-        </div>
-        <div class="flex-con hidden" id="salads">
-            <h1>My Salads</h1>
-        </div>
-        <div class="flex-con" id="pizzas">
-            <div class="row">                 
-                <img src="img/piza.jpg">                
-                <h3>Italian Pizza</h3>
-                <p>Prosciutto di Parma, ricotta cheese, pepperoni, red onions,
-                    Wisconsin mozzarella, and Delicious's pizza sauce, drizzles
-                    with
-                    pesto sauce.</p>
-            </div>
-            <div class="row">
-                <img src="img/Italian-Market-1.jpg">
-                <h3>Greek Pizza</h3>
-                <p>Truffle olive oil sauce, Wisconsin mozzarella, Prosciutto di
-                    Parma, fresh arugula, and fresh mozzarella.</p>
-            </div>
-            <div class="row">
-                <img src="img/Heart-Healthy-Veggie-1.jpg">
-                <h3>Healthy Veggie</h3>
-                <p>Fresh spinach, artichokes, white onions, mushrooms, Roma
-                    tomatoes,
-                    basil, and Wisconsin mozzarella, with Sicilian extra-virgin
-                    olive
-                    oil, and garlic sauce</p>
-            </div>
-            <div class="row">
-                <img src="img/Mediterranean-Pizza.jpg">
-                <h3>Mediterranean Pizza</h3>
-                <p>Fresh spinach, Roma tomatoes, feta cheese, Wisconsin
-                    mozzarella,
-                    black olives, and Sicilian extra-virgin olive oil garlic
-                    sauce.
-                </p>
-            </div>
-            <div class="row">
-                <img src="img/Margherita.jpg">
-                <h3>Margherita</h3>
-                <p>Roma tomatoes, fresh basil, garlic, Wisconsin mozzarella, and
-                    Sicilian extra-virgin olive oil.</p>
-            </div>
-            <div class="row">
-                <img src="img/Vegetarian.jpg">
-                <h3>Vegetarian</h3>
-                <p>Fresh spinach, bell peppers, black olives, white onions, Roma
-                    tomatoes, mushrooms, garlic, and Wisconsin mozzarella with
-                    Russo's pizza sauce.</p>
-            </div>
-            <div class="row">
-                <img src="img/Chicken-Rustica.jpg">
-                <h3>Chicken Rustica</h3>
-                <p>Grilled chicken with fresh spinach, basil, feta cheese, Roma
-                    tomatoes, Wisconsin mozzarella, Sicilian extra-virgin olive
-                    oil,
-                    and fresh garlic.</p>
-            </div>
-            <div class="row">
-                <img src="img/Tuscan.jpg">
-                <h3>Tuscan Vegan Veggie Pizza</h3>
-                <p>No Cheese. Marinara sauce, zucchini & squash, Portabella
-                    mushrooms, black olives, eggplant, roasted peppers, artichoke
-                    hearts, red onions, and fresh arugula.</p>
-            </div>
-            <div class="row">
-                <img src="img/New-York-Village.jpg">
-                <h3>New York Village</h3>
-                <p>Crumbled Italian sausage, pepperoni, Canadian bacon, beef, mushrooms, black olives, roasted peppers, and Wisconsin mozzarella, with Russo’s pizza sauce.</p>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <footer>
         <div class="footer-content">
             <div class="social-menu">
-                <h4>ABOUT US</h4>
-                <p>One Fifth Avenue at 8th Street
-                    New York City, NY 10003</p>
-                    <p> <i style=="font-size:24px" class="fa">&#xf0e0;</i> info@pizzadelicious.com</p>
-                <p id="phone"><i style="font-size:24px" class="fa">&#xf095;</i>
+                <h4>CONTACT US</h4>
+                <p> <i class="fa fa-map-marker fa-fw"
+                        style="font-size:24px; margin-left: -15px; margin-right: 10px;"></i>One
+                    Sixth
+                    Avenue at 8th Street</p>
+                <p style="margin-left: 26px;"> New York City, NY 10003</p>
+                <p><i class="fa fa-envelope fa-fw"
+                        style="font-size:24px; margin-left: -15px; margin-right: 10px;"></i>
+                    info@pizzadelicious.com
+                </p>
+                <p><i class="fa fa-phone fa-fw"
+                        style="font-size:24px; margin-left: -15px; margin-right: 10px;"></i>
                     +2 212 995 9559</p>
                 <ul>
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -140,20 +276,19 @@
             </div>
             <div class=footer-links>
                 <h4>OPENING HOURS</h4>
-                <p>9:00 AM - 11:00 PM</p>
-                <p>Monday to Saturday</p>
-                <p>Sunday - Holiday</p>
+                <p>Monday - Friday - 9:00 – 22:00</p>
+                <p>Saturday - 9:00 – 00:00</p>
+                <p>Sunday - 9:00 – 18:00</p>
             </div>
 
             <div class="footer-questions">
-                <h4>HAVE A QUESTIONS?</h4>
-                <form class="contact-form" action="index.html">
-                    <input type="text" name="name" placeholder="Your name...">
-                    <input type="email" name="email" placeholder="Your email...">
-                    <textarea name="message"
-                        placeholder="Your message..."></textarea>
-                    <button type="submit" name="Send">Send</button>
-                </form>
+                <h4>SERVICES</h4>
+                <ul>
+                    <li><a href="about.html">Quality Foods</a></li>
+                    <li><a href="index.html">Original Recipes</a></li>
+                    <li><a href="menu.html">Dine In or Take Out</a></li>
+                    <li><a href="about.html">Catering and Parties</a></li>
+                </ul>
             </div>
         </div>
 
@@ -161,6 +296,11 @@
             <p>Cvety's Delicious Pizza Web Design, Copyright &copy; 2020</p>
         </div>
     </footer>
+    <a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

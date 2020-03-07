@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/fav-icon.ico">
+    <link
+        href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,400i,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <title>Pizza Delicious</title>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <ul class="main-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="current"><a href="contacts.html">Contacts</a></li>
+            </ul>
+            <img class="logo" src="img/pizza-del.png">
+        </div>
+    </nav>
+    <section class="bg-2">
+        <div class="container">
+            <h1>Contacts</h1>
+        </div>
+    </section>
+    <div class="box-1">
+        <div class="container">
+            <h1>Pizzeria in the heart of the city</h1>
+            <p>We don't just make pizza. We love pizza!<br>Next time you are in the
+                neighbourhood come see us and enjoy your
+                perfect meal at Pizza Delicious Pizzeria.</p>
+        </div>
+    </div>
+    <section class="contacts">
+    </section>
+    <div class="box-1">
+        <div class="container">
+            <div class="style-center">
+                <h1>Where to find us</h1>
+                <h2>Contact Headquarters</h2>
+                <p>New York City</p>
+                <p>One Sixth Avenue at 8th Street</p>
+                <p>info@pizzadelicious.com</p>
+                <h2>Call us</h2>
+                <p> General Inquiry +2 212 995 9559<br>
+                    Franchising (888) 444-6686</p>
+                <h2>Regular Business Hours</h2>
+                <p> Monday - Friday from 9:00 am to 11:00 pm<br>
+                    Saturday from 9:00 am to 12:00 am<br>
+                    Sunday from 9:00 am to 6:00 pm</p>
+                <p style="font-style: italic;">*Outdoor hours may vary due to weather
+                    or
+                    other conditions</p>
+            </div>
+        </div>
+    </div>
+    <div class="box-1">
+        <div class="flex-conteiner">
+            <div class="style-left">
+                <h1>Have a Questions?</h1>
+                <p>Don't hesitate to ask us.</p>
+                <p>We welcome any inquiries and feedback you may have. If you have a
+                    question about our pizzeria, or even a story to tell about your
+                    experience, please use the contact form below to contact us and
+                    tell us all about it.</p>
+                <form class="contact-form" action="index.html">
+                    <input type="text" name="name" autocomplete="off"
+                        placeholder="Your name...">
+                    <input type="email" name="email" autocomplete="off"
+                        placeholder="Your email...">
+                    <input type="text" placeholder="Your subject...">
+                    <textarea name="message" rows="5"
+                        placeholder="Your message..."></textarea>
+                    <button type="submit" name="Send">Send</button>
+                </form>
+            </div>
+            <div class="style-left">
+                <img src="img/flying-slices.jpg" alt="slices">
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-menu">
+                <h4>CONTACT US</h4>
+                <p> <i class="fa fa-map-marker fa-fw"
+                        style="font-size:24px; margin-left: -15px; margin-right: 10px;"></i>One
+                    Sixth
+                    Avenue at 8th Street</p>
+                <p style="margin-left: 26px;"> New York City, NY 10003</p>
+                <p><i class="fa fa-envelope fa-fw"
+                        style="font-size:24px; margin-left: -15px; margin-right: 10px;"></i>
+                    info@pizzadelicious.com
+                </p>
+                <p><i class="fa fa-phone fa-fw"
+                        style="font-size:24px; margin-left: -15px; margin-right: 10px;"></i>
+                    +2 212 995 9559</p>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class=footer-links>
+                <h4>OPENING HOURS</h4>
+                <p>Monday - Friday - 9:00 – 22:00</p>
+                <p>Saturday - 9:00 – 00:00</p>
+                <p>Sunday - 9:00 – 18:00</p>
+            </div>
+
+            <div class="footer-questions">
+                <h4>SERVICES</h4>
+                <ul>
+                    <li><a href="about.html">Quality Foods</a></li>
+                    <li><a href="index.html">Original Recipes</a></li>
+                    <li><a href="menu.html">Dine In or Take Out</a></li>
+                    <li><a href="about.html">Catering and Parties</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Cvety's Delicious Pizza Web Design, Copyright &copy; 2020</p>
+        </div>
+    </footer>
+    <a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKxHuVU5my3CDYAm-Vqa3zpVnhxHBnh5k">
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
