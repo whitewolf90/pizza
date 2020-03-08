@@ -23,7 +23,7 @@ html {
 
 body {
     background-color: #2f2f2f;
-    /* transition: background-image 2s ease-in-out; */
+   /* transition: background-image 2s ease-in-out; */
 }
 
 .container {
@@ -81,7 +81,6 @@ div.container li {
     min-height: 700px;
     background: url("img/messy-pizza.jpg") no-repeat;
     background-size: cover;
-
 }
 
 .secondary-title {
@@ -136,7 +135,7 @@ div.container li {
 
 .flex-conteiner {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     width: 80%;
     margin: auto;
     justify-content: space-between;
@@ -146,11 +145,10 @@ div.container li {
 }
 
 .row-deals {
-    /* margin: 25px; */
     align-items: center;
     flex: 1;
     flex-grow: inherit;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .row-deals p {
@@ -168,6 +166,7 @@ div.container li {
 }
 
 .what {
+    flex: 1;
     text-align: center;
     margin: 25px 10px 40px 10px;
 }
@@ -307,6 +306,7 @@ textarea {
     border-radius: 5px;
     border: 2px solid #ffb142;
     box-sizing: border-box;
+    color: #edddc2;
     padding: 8px;
     margin: 20px 0;
     outline: none;
@@ -425,8 +425,8 @@ textarea:focus {
 
 .box-1 img {
     float: right;
-    margin: 40px;
     border: 1px solid #edddc2;
+    margin: 22px 0 25px 40px;
     padding: 0;
 }
 
@@ -583,14 +583,19 @@ textarea:focus {
 
 .style-left {
     margin-top: 40px;
+    margin-bottom: 40px;
+    flex:1;
 }
-.style-left img {
-    flex: 1;
+
+.style-left img {   
+    object-fit: cover; 
     margin: 45px 0 40px 15px;
 }
+
 .contact-form {
     margin-top: 40px;
 }
+
 .style-left p{
     padding-right: 52px;
 }
